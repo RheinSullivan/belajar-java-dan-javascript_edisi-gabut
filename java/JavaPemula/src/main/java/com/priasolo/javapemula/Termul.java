@@ -32,12 +32,12 @@ public class Termul {
 
 
 // Variabel lokal adalah Variabel yg didefinisikan kedalam sebuah method, konstuktor, atau blok. Dapat dideklasaikan kedalam method lalu akan dihapus setelah method dijalankan.
-// Variabel intance adalah Variabel yg ada du dalam class, cuma di luar method, Variabel ini dapat diinisialisai saat memuat kelas, dapat diakses dari dalam method, konstruktor, atau blok dari kelas itu.
+// Variabel intance adalah Variabel yg ada di dalam class, cuma di luar method, Variabel ini dapat diinisialisai saat memuat kelas, dapat diakses dari dalam method, konstruktor, atau blok dari kelas itu.
 // Variabel class adalah variabel yg didefibisikan di dalam class, di luar method & menggunakan Reserved Word Static.
 
-// Constuctor adalah setiap class pasti memiliki constructor, nah konstruktor sendiri itu sebuah blok kode progman yg bakal dijalankan ketika intanxes di sebuah objek.
+// Constuctor adalah setiap class pasti memiliki constructor, nah konstruktor sendiri itu sebuah blok kode progman yg bakal dijalankan ketika intances di sebuah objek.
 /* Object dibuat dari sebuah class, pada java, kata kunci new buat bikin objek baru. 
-* Deklasai adalah variabel dengan nama variabel beserta tipe obje nya.
+* Deklarasi adalah variabel dengan nama variabel beserta tipe objek nya.
 * Instansiasi adalah kata kunci new buat bikin objek baru.
-* Inisialisasi adalah kata kunci new diikuti pemanggilan constructor untuk menginisialisasi sebuah objek baru.
+* Inisialisasi adalah kata kunci new yg diikuti pemanggilan constructor untuk menginisialisasi sebuah objek baru.
 */
