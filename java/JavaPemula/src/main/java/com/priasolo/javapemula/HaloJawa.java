@@ -24,3 +24,19 @@ public class HaloJawa { // Wajib huruf kapital disetiap awal kata atau disebut d
 
 // Ini adalah tag komentar single-line, komentar ini gk perlu pake penutup "//".
 /* Ini adalah tag komentar multi-line, komentar ini perlu penutup "*" dan "/". */
+/* Contoh Multi-Line tag penutup selalu bisa dilakukan seperti ini, dan semua code atau text didalam komentar baik itu Single-Line maupun Multi-Line akan dianggap atau diabaikan oleh Compiler Java itu sendiri
+*/
+
+/* Pengenalan Objek:
+* - State = Keadaan
+* - Behavior = Perilaku
+*/
+
+/* Pengenalan Class:
+* - Class = Blue Print/cetakan
+*/
+
+/* Contoh:
+* Jika pria solo sedang dalam keadaan (State) bergairah penuh dengan energi positif, maka perilaku (Behavior) semangatnya akan membara-bara "Saia akan lawan" :v
+* State di simpan ke dalam field-field, sedangkan Behavior ditunjukkan melalui method-method. Method akan beroperasi terhadap keadaan internal di sebuah objek dan komunikasi objek yg terjadi melalui Method-Method.
+*/
