@@ -17,3 +17,11 @@ public class Anjing { // Class ini disebut dengan kata kunci (Reserved Word) Cla
         Anjing namaAnjing = new Anjing("RAUL Iqbal :'v"); // Bagian ini juga sama disebut dengan Instance Object yg diambil dari class Anjing, dengan memanfaatkan Constructor yg dibikin sebelum ini. Sebuah objek baru Anjing dibikin untuk paramenter "nama" dengan value "RAUL Iqbal :'v", hehe...
     }
 }
+
+/* Bikin objek baru
+* RefensiObject = new namaConstructor();
+* Memanggil variabel
+* RefensiObject.namaVariabel;
+* Panggil method dari class
+* ReferensiObject.NamaMethod();
+*/
