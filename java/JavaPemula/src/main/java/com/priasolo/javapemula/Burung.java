@@ -2,64 +2,48 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.priasolo.javapemula; // "package" adalah alamat Class di dalam project. Kalau project dianggap seperti sekolah, package ini seperti nama gedung dan ruang kelas tempat file Java disimpan.
+package com.priasolo.javapemula; // "Package" ini kayak nama map besar buat naro File Java, jadi File "Burung" tidak kecampur sembarangan sama File lain di Project.
 
 /**
  *
  * @author rheinsullivan
  */
-public class Burung { // "Burung" adalah nama Class. Class ini bisa dianggap sebagai Blueprint untuk membuat object burung yg punya data dan aksi sendiri.
-
-    int panjangBurung; // "panjangBurung" adalah variabel Instance. Variabel Instance adalah data yg menempel ke object. Contoh sehari-hari seperti tinggi badan yg dimiliki tiap orang dan bisa beda-beda.
-
-    public Burung(String nama) { // "Burung" yg ini adalah Constructor. Constructor ini otomatis dijalankan saat ada object baru dibuat dari Class "Burung".
-        // "String nama" adalah parameter Constructor. Parameter ini menerima nama "Burung" dari luar saat object baru dibuat.
-        // "nama" hanya hidup di dalam Constructor ini. Setelah Constructor selesai, parameter ini tidak dipakai lagi kecuali nilainya disimpan ke variabel lain.
-        System.out.println("Nama burung RAUL: " + nama); // Baris ini menampilkan nama "Burung" ke Terminal. Contoh gampangnya seperti mesin kasir mencetak nama pembeli di struk.
-    }
-
-    public void aturPanjang(int panjang) { // "aturPanjang" adalah Method. Method adalah aksi yg bisa dilakukan object. Contoh sehari-hari seperti tombol volume yg bisa mengubah keras suara, jadi keras/besar atau jadi kecil.
-        // "void" berarti Method ini tidak mengembalikan nilai. Method ini hanya bekerja mengubah data di dalam object.
-        // "int panjang" adalah parameter Integer bertipe angka bulat. "int" cocok untuk angka seperti 1, 10, 15, dan 100.
-        // "panjang" adalah data yg dikirim dari luar Method. Contoh gampangnya seperti orang memberi angka untuk ukuran ke tukang jahit.
-        panjangBurung = panjang; // "panjangBurung" diisi dengan nilai dari parameter "panjang". Ibarat formulir kosong yg kolom panjangnya diisi angka baru.
-        // Setelah baris ini berjalan, object "Burung" punya data "panjangBurung" yg nilainya sama dengan "panjang".
-    }
-
-    public int lebarBurung() { // "lebarBurung" adalah Method yg mengembalikan nilai bertipe "int". Karena tidak pakai "void", Method ini wajib punya "return".
-        // Walau namanya "lebarBurung", data yg dikembalikan sebenarnya "panjangBurung". Jadi nama Method ini bisa bikin bingung kalau dibaca orang lain.
-        // Method return itu seperti Kalkulator. Lu kasih proses, lalu Kalkulator mengembalikan hasil angka.
-        System.out.println("Panjang Burung: " + panjangBurung + " MM"); // Baris ini menampilkan nilai "panjangBurung" ke Terminal supaya manusia bisa lihat hasilnya.
-        return panjangBurung; // "return panjangBurung" mengembalikan nilai variabel "panjangBurung" ke tempat Method ini dipanggil.
-        // "return" juga menghentikan Method. Kalau ada kode setelah return di Method yg sama, kode itu biasanya tidak akan dijalankan.
-    }
-
-    public static void main(String[] args) { // "main" adalah Method utama yg pertama kali dijalankan Java saat file ini di jalankan.
-        Burung burungRaul = new Burung("Jony RAUL :v"); // "burungRaul" adalah variabel object yg menyimpan object baru dari Class "Burung".
-        // "new Burung" membuat object baru dan memanggil Constructor "Burung".
-        // "Jony RAUL :v" dikirim ke parameter "nama" di Constructor. Jadi Constructor akan mencetak nama itu.
-        burungRaul.aturPanjang(15); // "burungRaul.aturPanjang" memanggil Method "aturPanjang" dari object "burungRaul".
-        // Angka "15" dikirim ke parameter "panjang". Setelah masuk Method, nilai itu disimpan ke variabel "panjangBurung".
-        burungRaul.lebarBurung(); // "burungRaul.lebarBurung" memanggil Method yg mencetak dan mengembalikan nilai "panjangBurung".
-        // Karena hasil Return tidak ditampung ke variabel lain, hasil Return tidak dipakai lanjut. Tapi teks tetap muncul karena ada "System.out.println" di dalam Method.
-        System.out.println("Lebar Burung RAUL: " + burungRaul.panjangBurung); // Baris ini membaca langsung variabel "panjangBurung" dari object "burungRaul".
-        // Membaca variabel langsung seperti ini bisa dilakukan karena "panjangBurung" tidak diberi Modifier "private".
-        // Untuk project yg lebih rapi, biasanya data dibuat "private" lalu diakses pakai Getter dan Setter.
-    }
-}
+public class Burung { // "Burung" adalah "Class", bayangin ini kayak rancangan data burung di buku catatan, rancangan ini nanti bisa dipakai buat bikin data burung yg nyata dalam program.
+    int panjangBurung; // "panjangBurung" adalah "Variable Instance" bertipe "int", artinya tempat nyimpen angka bulat milik tiap "Object Burung", kayak kolom panjang di formulir ukur barang.
+    
+    public Burung (String nama) { // "Burung" di sini adalah "Constructor", dia punya "Parameter" bernama "nama" bertipe "String", jadi pas bikin "Object Burung" baru kita bisa kasih nama burungnya.
+        System.out.println("Nama burung RAUL: "+ nama); // Baris ini nampilin teks dan isi "Parameter nama" ke "Terminal", jadi orang yg jalanin program bisa lihat nama yg dikirim pas "Object" dibuat.
+    } // Kurung kurawal ini nutup "Constructor Burung", jadi bagian sambutan awal buat "Object" baru selesai di sini.
+    
+    public void aturPanjang (int panjang) { // "aturPanjang" adalah "Method" bertipe "Void", artinya dia cuma melakukan kerja, bukan ngasih hasil balik, contohnya kayak kita nulis angka di kertas tapi tidak minta balasan dari kertas itu.
+        panjangBurung = panjang; // Nilai dari "Parameter panjang" disimpan ke "Variable panjangBurung", contohnya kayak angka hasil ukur meja ditulis ke kolom panjang di catatan.
+    } // Kurung kurawal ini nutup "Method aturPanjang", jadi proses menyimpan angka panjang selesai di sini.
+    
+    public int lebarBurung () { // "lebarBurung" adalah "Method" bertipe "int", artinya dia bisa ngasih angka balik, meskipun namanya lebar isi yg dipakai tetap "panjangBurung" sesuai Code asli.
+        System.out.println("Panjang Burung: "+ panjangBurung + " MM"); // Baris ini nampilin isi "Variable panjangBurung" ke "Terminal", contohnya kayak orang ukur kain lalu ngomong hasil ukurannya dengan satuan.
+        return panjangBurung; // "Return" mengembalikan nilai "panjangBurung" ke tempat "Method" dipanggil, contohnya kayak kasir ngasih total belanja setelah semua barang dihitung.
+    } // Kurung kurawal ini nutup "Method lebarBurung", jadi proses nampilin dan mengembalikan nilai selesai di sini.
+    
+    public static void main (String[] args){ // "main" adalah "Method" utama, Java mulai jalan dari sini, kayak orang mulai baca buku dari halaman pertama yg ditunjuk.
+        Burung burungRaul = new Burung ("Jony RAUL :v"); // "burungRaul" adalah "Variable" yg nyimpen "Object Burung" baru, "new Burung" bikin "Object" baru, dan "Jony RAUL :v" dikirim ke "Parameter nama".
+        burungRaul.aturPanjang(15); // Baris ini manggil "Method aturPanjang" lewat "Object burungRaul", angka "15" dikirim ke "Parameter panjang", lalu disimpan ke "Variable panjangBurung".
+        burungRaul.lebarBurung(); // Baris ini manggil "Method lebarBurung", lalu "Method" itu nampilin nilai "panjangBurung" dan juga mengembalikan nilai angka dari "Return".
+        
+        System.out.println("Lebar Burung RAUL: " + burungRaul.panjangBurung); // Baris ini membaca langsung "Variable panjangBurung" dari "Object burungRaul", contohnya kayak buka catatan lalu baca angka yg sudah ditulis sebelumnya.
+    } // Kurung kurawal ini nutup "Method Main", jadi alur utama program selesai di sini.
+} // Kurung kurawal ini nutup "Class Burung", jadi semua rancangan data dan aksi burung selesai di sini.
 
 /*
- * Bab - Kesimpulan
- * - "Burung" adalah Class yg menjadi cetakan object.
- * - "panjangBurung" adalah variabel Instance yg menempel ke object.
- * - "Burung" pada "public Burung" adalah Constructor.
- * - "nama" adalah parameter Constructor yg menerima teks nama burung.
- * - "aturPanjang" adalah Method void yg tugasnya mengubah data.
- * - "panjang" adalah parameter Method yg menerima angka dari luar.
- * - "lebarBurung" adalah Method return yg mengembalikan angka.
- * - "return" dipakai saat Method harus memberi hasil balik.
- * - Contoh sehari hari Method void seperti tombol lampu yg hanya menyalakan lampu
- * - Contoh sehari hari Method return seperti kalkulator yg memberi hasil hitungan
- * - "burungRaul" adalah object nyata yg dibuat dari class "Burung"
- * - Object bisa punya data sendiri dan bisa menjalankan Method sendiri
+ * Kesimpulan:
+ * - "int" dipakai buat angka bulat, contohnya umur, jumlah barang, nomor antrian, jumlah kursi, atau panjang dalam angka tanpa koma.
+ * - "String" dipakai buat teks, contohnya nama orang, alamat rumah, judul buku, nama toko, atau kalimat pesan.
+ * - "Variable Instance" seperti "panjangBurung" adalah data yg nempel ke "Object", jadi tiap "Object Burung" bisa punya nilai panjang sendiri.
+ * - "Constructor Burung" jalan otomatis saat "new Burung" dipanggil, jadi cocok buat aksi awal seperti nampilin nama atau nyiapin data pertama.
+ * - "Parameter nama" adalah data titipan buat "Constructor", contohnya kayak kita ngasih nama pelanggan ke petugas supaya petugas bisa catat.
+ * - "Method Void" seperti "aturPanjang" dipakai kalau tugasnya cuma melakukan aksi, contohnya menulis data, mengubah nilai, atau menyalakan lampu.
+ * - "Method Return" seperti "lebarBurung" dipakai kalau tugasnya perlu ngasih hasil balik, contohnya menghitung total belanja lalu mengembalikan angka totalnya.
+ * - "Return" itu bukan sekadar kata, tapi jalan pulang buat hasil dari "Method", jadi hasilnya bisa dipakai lagi oleh Code lain.
+ * - "burungRaul.aturPanjang" artinya kita nyuruh "Object burungRaul" menjalankan aksi "aturPanjang", kayak kita nyuruh seseorang mencatat angka ke buku.
+ * - "burungRaul.panjangBurung" artinya kita membaca data yg ada di dalam "Object burungRaul", kayak kita buka buku catatan lalu ambil isi kolom tertentu.
+ * - Alur gampangnya adalah bikin "Object", isi panjangnya, panggil "Method" buat nampilin panjangnya, lalu baca lagi nilai panjangnya secara langsung.
  */

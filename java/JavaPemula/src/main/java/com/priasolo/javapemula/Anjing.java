@@ -2,47 +2,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.priasolo.javapemula; // "package" adalah alamat folder logis untuk file ini. Baygin project Java itu seperti komplek rumah. Package ini seperti alamat blok dan nomor rumah supaya Java tau class "Anjing" tinggal di bagian mana.
+package com.priasolo.javapemula; // "Package" ini adalah alamat rumah buat File Java ini, jadi Java tahu kalau "Anjing" tinggal di dalam kelompok "com.priasolo.javapemula".
 
 /**
  *
  * @author rheinsullivan
  */
-public class Anjing { // "Anjing" adalah nama class. Class itu seperti cetakan atau blueprint. Contoh gampangnya seperti cetakan kue. Dari satu cetakan yg sama, kita bisa bikin banyak kue dengan bentuk yg mirip tapi isinya bisa beda.
-
-    public Anjing(String nama) { // "Anjing" yg ini adalah constructor. Constructor itu Method khusus yg namanya wajib sama dengan nama class. Kalau class bernama "Anjing", constructor juga wajib bernama "Anjing".
-        // "String nama" adalah parameter. Parameter itu seperti kotak titipan data yg dikirim dari luar ke dalam constructor. Contoh sehari hari seperti lu pesan minuman lalu kasir nanya nama pesanan yg mau dipesen lu.
-        // "String" adalah tipe data untuk Teks. Kalau data bentuknya tulisan seperti "nama orang, nama hewan, alamat, atau kalimat", biasanya pakai "String".
-        // "Nama" adalah nama parameter. Parameter ini akan menampung teks yg dikirim saat object "Anjing" dibuat.
-        System.out.println("Nama anjing gw: " + nama); // "System.out.println" dipakai untuk menampilkan teks ke Terminal. Terminal itu seperti papan pengumuman kecil yg nunjukin hasil kerja program.
-        // Tanda "+" di sini dipakai untuk menggabungkan teks tetap dengan isi parameter "nama". Contoh gampangnya seperti gabungin tulisan di stiker dengan nama asli di kartu pelajar.
-    }
-
-    public static void main(String[] args) { // "Main" adalah Method utama. Java mulai menjalankan program dari Method ini. Ibarat aplikasi punya tombol Start/Mulai, maka "main" adalah tempat Start/Mulai itu bekerja.
-        // "public" artinya Method ini bisa dikenali dari luar Class. Ibarat pintu toko yg dibuka untuk umum.
-        // "static" artinya Method ini bisa dipanggil tanpa harus membuat object dulu. Ibarat papan pengumuman sekolah yg bisa dibaca semua orang tanpa harus daftar jadi murid baru.
-        // "void" artinya Method ini tidak mengembalikan nilai. Ibarat lu cuma nyalain lampu. Lampunya menyala tapi tidak ngasih barang balik ke tangan lu.
-        // "String[] args" adalah parameter bawaan untuk menerima data dari luar saat program dijalankan lewat terminal. Untuk pemula, bagian ini cukup dipahami sebagai perlengkapan wajib Method "main".
-        Anjing namaAnjing = new Anjing("RAUL Iqbal :'v"); // "namaAnjing" adalah variabel object. Variabel ini menyimpan object baru dari Class "Anjing".
-        // "new" dipakai untuk membuat object baru. Contoh sehari hari seperti pabrik membuat barang baru dari cetakan.
-        // "new Anjing" artinya Java membuat object baru berdasarkan Class "Anjing" dan langsung menjalankan Constructor "Anjing".
-        // "RAUL Iqbal :'v" adalah value/nilai yg dikirim ke parameter "nama". Jadi isi parameter "nama" di Constructor akan menjadi teks ini.
-        // Object "namaAnjing" sebenarnya tidak dipakai lagi setelah dibuat, tapi tetap penting untuk contoh awal supaya kelihatan cara bikin object dari Class.
-    }
-}
+public class Anjing { // "Anjing" adalah nama "Class", bayangin "Class" itu kayak cetakan kue, cetakannya belum bisa dimakan, tapi dari cetakan itu kita bisa bikin banyak kue nyata atau dalam Java disebut "Object".
+    public Anjing(String nama){ // "Anjing" di baris ini adalah "Constructor", bentuknya mirip "Method", tapi tugasnya khusus buat nyambut "Object" baru pas dibuat, kayak petugas loket yg langsung nanya nama orang begitu orang itu daftar.
+        System.out.println("Nama anjing gw: "+nama); // "System.out.println" dipakai buat nampilin tulisan ke "Terminal", jadi kalau di dunia nyata ini kayak papan pengumuman kecil yg ngasih tahu hasil dari program ke orang yg lagi belajar.
+    } // Kurung kurawal ini nutup isi "Constructor" bernama "Anjing", jadi semua kerjaan awal pas bikin "Object" baru selesai di sini.
+    
+    public static void main(String[] args) { // "main" adalah pintu masuk utama program Java, bayangin kayak pintu depan rumah, orang masuk lewat pintu ini dulu sebelum bisa lihat isi rumahnya.
+        Anjing namaAnjing = new Anjing("RAUL Iqbal :'v"); // "namaAnjing" adalah nama "Variable" yg nyimpen "Object" baru, "new Anjing" artinya bikin "Object" baru dari "Class" Anjing, sedangkan "RAUL Iqbal :'v" masuk ke "Parameter" bernama "nama".
+    } // Kurung kurawal ini nutup "Method Main", jadi alur utama program berhenti di sini kalau tidak ada perintah lain.
+} // Kurung kurawal ini nutup "Class Anjing", jadi semua isi tentang cetakan "Anjing" selesai di sini.
 
 /*
  * Kesimpulan:
- * - "Anjing" yg pertama pada "public class Anjing" adalah nama dari Class.
- * - "Anjing" yg kedua pada "public Anjing" adalah nama dari Constructor.
- * - Constructor adalah kode yg otomatis berjalan saat object dibuat memakai "new".
- * - "nama" adalah parameter yg menerima data dari luar Constructor.
- * - "namaAnjing" adalah variabel object yg menyimpan hasil object baru.
- * - "new" adalah keyword/Kata Kunci untuk membuat object baru dari sebuah Class.
- * - Contoh sehari hari Class itu seperti cetakan kartu pelajar kosong.
- * - Object itu seperti kartu pelajar yg sudah jadi dan punya nama murid.
- * - Constructor itu seperti petugas sekolah yg langsung mengisi nama saat kartu dibuat.
- * - Parameter itu seperti kolom nama yg disiapkan untuk menerima isi.
- * - Value itu seperti tulisan asli yg dimasukkan ke kolom nama.
- * - "System.out.println" itu seperti speaker atau layar kecil yg menampilkan hasil program.
+ * - "Class" itu cetakan atau rancangan, contohnya kayak formulir kosong di kantor kelurahan, formulirnya belum punya data siapa pun.
+ * - "Object" itu hasil nyata dari "Class", contohnya formulir kosong tadi sudah diisi nama warga, alamat warga, dan umur warga.
+ * - "Constructor" itu bagian yg langsung jalan saat "Object" dibuat, contohnya kayak petugas pendaftaran yg langsung nanya nama begitu ada orang baru datang.
+ * - "Parameter" itu data titipan yg masuk ke "Constructor" atau "Method", contohnya kayak nama orang yg ditulis di formulir pendaftaran.
+ * - "String nama" berarti "Parameter" bernama "nama" hanya cocok diisi teks, contohnya nama orang, nama hewan, nama toko, atau nama jalan.
+ * - "System.out.println" itu alat buat nampilin hasil ke "Terminal", contohnya kayak struk belanja yg keluar setelah kasir selesai menghitung.
+ * - "new Anjing" berarti bikin benda baru dari cetakan "Anjing", contohnya kayak ambil gelas baru dari rak lalu gelas itu bisa dipakai sendiri.
+ * - "namaAnjing" adalah "Variable" yg nyimpen alamat "Object", contohnya kayak label di kardus supaya kita tahu kardus itu isinya apa.
+ * - Alur gampangnya adalah Java masuk lewat "main", lalu Java bikin "Object" baru dari "Anjing", lalu "Constructor" langsung jalan, lalu tulisan muncul di "Terminal".
  */

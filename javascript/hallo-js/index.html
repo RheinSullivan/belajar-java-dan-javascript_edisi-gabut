@@ -1,24 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Time Learning JawaSkrip</title>
-</head>
-<script type="text/javascript">
-    function hallo_jawa() {
-        var jawa = document.getElementById("div_halo_pria_solo");
+<!DOCTYPE html> <!-- "DOCTYPE HTML" memberi tahu "Browser" kalau halaman ini memakai aturan HTML versi modern. -->
+<html lang="en"> <!-- "html" adalah Tag pembuka seluruh halaman, "lang" memberi info bahasa utama halaman ke "Browser". -->
+<head> <!-- "Head" adalah bagian belakang layar yg menyimpan info halaman, bukan bagian utama yg dibaca user. -->
+    <meta charset="UTF-8"> <!-- "charset UTF 8" membantu "Browser" membaca huruf, simbol, dan karakter dengan benar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "Viewport" membantu tampilan menyesuaikan ukuran layar, jadi halaman tidak aneh saat dibuka di HP atau Laptop. -->
+    <title>First Time Learning JawaSkrip</title> <!-- "Title" adalah judul yg muncul di Tab "Browser", mirip label nama di map dokumen. -->
+</head> <!-- Tag ini nutup bagian "Head", jadi info belakang layar selesai di sini. -->
+<script type="text/javascript"> <!-- "Script" adalah tempat menulis JavaScript, "type" ini ngasih tahu kalau isi Tag ini adalah JavaScript. -->
+    function hallo_jawa() { // "hallo_jawa" adalah nama "Function", tugasnya menyimpan beberapa perintah supaya bisa dipanggil saat tombol diklik.
+        var jawa = document.getElementById("div_halo_pria_solo"); // "jawa" adalah "Variable", "document.getElementById" mencari Elemen dengan "Id div_halo_pria_solo", mirip cari nama orang di daftar kontak.
 
-        jawa.innerHTML += "<p>Hallo bre, belajar JawaSkrip bareng Pria Solo :V</p>";
-    }
+        jawa.innerHTML += "<p>Hallo bre, belajar JawaSkrip bareng Pria Solo :V</p>"; // "innerHTML" adalah isi HTML di dalam Elemen, tanda tambah sama dengan membuat isi baru ditambahkan tanpa menghapus isi lama.
+    } // Kurung kurawal ini nutup "Function hallo_jawa", jadi kumpulan perintahnya selesai di sini.
 
-</script>
-<body>
-    <h1>Belajar JawaSkrip Bareng Orang Jawa :V</h1>
-    <p>Saya belajar bahasa pemrograman JawaSkrip bareng orang Jawa asli (rheinsullivan.web.id)</p>
-    <br>
-    <button id="edek" onclick="hallo_jawa()">Tekan Saya</button>
+</script> <!-- Tag ini nutup bagian "Script", jadi JavaScript di halaman ini selesai ditulis. -->
+<body> <!-- "Body" adalah bagian yg tampil di layar user, jadi isi seperti judul, paragraf, tombol, dan hasil klik ada di sini. -->
+    <h1>Belajar JawaSkrip Bareng Orang Jawa :V</h1> <!-- "h1" adalah judul utama halaman, mirip tulisan paling besar di kertas pengumuman. -->
+    <p>Saya belajar bahasa pemrograman JawaSkrip bareng orang Jawa asli (rheinsullivan.web.id)</p> <!-- "p" adalah paragraf, cocok buat kalimat penjelasan biasa di bawah judul. -->
+    <br> <!-- "br" membuat pindah baris atau jarak kosong, mirip menekan Enter sekali di dokumen. -->
+    <button id="edek" onclick="hallo_jawa()">Tekan Saya</button> <!-- "button" adalah tombol, "onclick" menjalankan "Function hallo_jawa" saat tombol diklik. -->
 
-    <div id="div_halo_pria_solo"></div>
-</body>
-</html>
+    <div id="div_halo_pria_solo"></div> <!-- "div" ini adalah wadah kosong dengan "Id div_halo_pria_solo", nanti JavaScript menambahkan paragraf baru ke dalam wadah ini. -->
+</body> <!-- Tag ini nutup bagian "Body", jadi isi yg terlihat user selesai di sini. -->
+</html> <!-- Tag ini nutup seluruh halaman HTML. -->
+
+<!--
+Kesimpulan:
+- "HTML" adalah kerangka halaman, contohnya seperti rangka rumah sebelum diisi perabot.
+- "JavaScript" adalah bagian yg bikin halaman bisa bereaksi, contohnya seperti saklar lampu yg bikin lampu menyala saat ditekan.
+- "Function hallo_jawa" adalah kumpulan perintah yg baru jalan saat dipanggil.
+- "button" adalah tombol yg bisa diklik user.
+- "onclick" adalah kejadian saat tombol diklik.
+- "document" adalah halaman yg sedang dibuka oleh "Browser".
+- "getElementById" dipakai buat mencari Elemen berdasarkan "Id".
+- "innerHTML" dipakai buat membaca atau mengubah isi HTML di dalam Elemen.
+- Tanda tambah sama dengan pada "innerHTML" membuat isi baru ditambahkan ke isi lama.
+- Contoh awamnya adalah papan tulis kosong bernama "div_halo_pria_solo".
+- Saat tombol ditekan, JavaScript menulis kalimat baru di papan itu tanpa menghapus tulisan sebelumnya.
+-->
