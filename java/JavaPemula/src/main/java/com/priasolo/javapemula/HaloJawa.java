@@ -15,7 +15,7 @@ public class HaloJawa { // Wajib huruf kapital disetiap awal kata atau disebut d
 }
 
 // Class, variabel, dan method adalah Identifier, diawali dengan (A-Z) atau (a-z). Dapat di isi dengan kombinasi karakter seperti: $ (dollar), atau _ (underscore).
-// Kata kunci Java (reserved word) gk bisa dipake sebagai Identifier, karena Identifier bersifat Case Sensitive.
+// Kata kunci Java (Reserved Word) gk bisa dipake sebagai Identifier, karena Identifier bersifat Case Sensitive.
 
 // Modifier akses seperti default, public, proected, dan private.
 // Modifier non akses seperti final, abstract, dan stricfp.
